@@ -1,0 +1,18 @@
+﻿<Window x:Class="JhonCedricRomano.VideoPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JhonCedricRomano.VideoPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" AllowDrop="True" Drop="Window_Drop">
+    <Grid>
+        <MediaElement Height="350" HorizontalAlignment="Left" Name="mediaElement1" VerticalAlignment="Top" Width="792" MediaOpened="MediaElement1_MediaOpened" />
+        <Button Content="Play" HorizontalAlignment="Left" Height="23" Margin="0,350,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Button Content="Pause" HorizontalAlignment="Left" Height="23" Margin="85,350,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_1"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Height="23" Margin="159,350,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click_2"/>
+        <Slider  HorizontalAlignment="Left" Height="32" Margin="10,378,0,0" Name="slider_seek" VerticalAlignment="Top" Width="729" ValueChanged="Slider_seek_ValueChanged"/>
+        <Slider HorizontalAlignment="Left" Height="23" Margin="588,350,0,0" Name="slider_vol" VerticalAlignment="Top" Width="151" Maximum="0.1" LargeChange="0.1" SmallChange="0.01" Value="1" ValueChanged="Slider_vol_ValueChanged"/>
+
+    </Grid>
+</Window>
